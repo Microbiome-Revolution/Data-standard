@@ -1,9 +1,0 @@
-Raw DNA sequence reads should be submitted to the SRA.
-
-Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis.
-
-SRA Homepage - https://www.ncbi.nlm.nih.gov/sra/
-
-Submission Quick Start - https://www.ncbi.nlm.nih.gov/sra/docs/submit/#accepted-data
-
-File Format Guide - ncbi.nlm.nih.gov/sra/docs/submitformats/
