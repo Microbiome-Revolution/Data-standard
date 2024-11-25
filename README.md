@@ -52,7 +52,29 @@ A mind map of the data flow between work packages can be seen below. It is imper
 
  <img src="graphics/project_mind_map.svg" width="800" alt="">
 
-Data descriptor files should be placed within the relevant work package directory. For each data file in the **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
+Data descriptor files should be placed within the relevant work package directory. For each data file in the data repository **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
+
+For example, and acceptable directory in the data repository could be:
+```
+WP1
+|-- field_data/
+|-- |-- field_site_information.csv
+|-- dna_quantification/
+|-- |-- dna_quantification_results.csv/
+|-- |-- dna_quantification_parameters.csv
+```
+An appropriate metadata repository would include descriptor files in the following directories in this repository:
+```
+WP1
+|-- field_data/
+|-- |-- field_site_information.md
+|-- dna_quantification/
+|-- |-- dna_quantification_results.md/
+|-- |-- dna_quantification_parameters.md
+```
 
 **If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
+
+
+
 
