@@ -39,7 +39,20 @@ This documentation standardises the formatting of sequence data files and sample
 
 5. **Data Structure for Analysis:** Files should be structured to facilitate integration into downstream processes, such as statistical analyses or modelling. Each row should correspond to an individual observation (e.g., wells, plants, or samples), and each column should represent a single variable. A tidy data structure should be maintained, where every variable has a dedicated column and every observation occupies a single row.
 
+
+| Category         | Principle                      | Good Example                                | Bad Example                        |
+|------------------|--------------------------------|---------------------------------------------|------------------------------------| 
+| Column Names     | Consistent formatting          | ```sample_id```, ```plant_weight```         | ```SampleID```, ```Plant Weight``` |
+|                  | Descriptive and clear          | ```well_position```, ```dna_quantity```     | ```wp```, ```quantity```           |
+|                  | Standardised convention        | ```lowerCamelCase``` (e.g., ```sampleId```) | ```SAMPLEID```, ```sample.id```    |
+|                  | No special characters          | ```plate_number```                          | ```plate#```                       |
+| Data Conventions | Standardised units             | ```μg/μl```, ```g```                        | No units or mixed units            |
+|                  | Uniform date formats           | ```dd/mm/yyyy```                            | mm/dd/yyyy, 2024-Nov-25            |
+|                  | Clear missing data markers     | ```EMPTY```, ```NA```                       | Blank cells, ```0```               |
+|                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use           | ```Yes```, ```No```, ```N2```      |
+
+
 #### Working within this repository
 
-
+Data descriptor files should be placed within the relevant work package directory. For each data file in the **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. If the structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
 
