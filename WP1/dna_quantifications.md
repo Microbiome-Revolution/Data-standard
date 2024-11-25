@@ -1,7 +1,3 @@
-## The Microbiome Green Revolution's documentation for working with Work-Package 1 (Field Surveys) data and metadata
-
-### There are currently two files associated with Work-Package 1:
-
 #### *dna_quantifications.csv*
 
 - This file contains the outputs from the DNA quantification experiments, following the field sample collection undertaken by Imperial Staff and Farmers.
