@@ -54,3 +54,5 @@ A mind map of the data flow between work packages can be seen below. It is imper
 
 Data descriptor files should be placed within the relevant work package directory. For each data file in the **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
 
+**If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
+
