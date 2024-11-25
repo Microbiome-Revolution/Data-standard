@@ -13,7 +13,7 @@ This documentation standardises the formatting of sequence data files and sample
 
 3. Interoperable
     - **Standardised Conventions:** Adopt widely accepted naming conventions that are compatible with various software, systems, and disciplines. For instance, follow established formats like snake_case or camelCase.
-    - **Versioning:** Include version numbers or timestamps in file names to clarify relationships between iterations (e.g., Dataset_v1 or Data_2024-11-25).
+    - **Versioning:** Use version control to maintain and clarify relationships between iterations.
     - **Avoid Context Dependency:** Names should stand alone without requiring external context to interpret their meaning, ensuring compatibility across systems and teams.
 
 4. Reusable
@@ -48,6 +48,9 @@ This documentation standardises the formatting of sequence data files and sample
 
 #### Working within this repository
 
-Data descriptor files should be placed within the relevant work package directory. For each data file in the **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. If the structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
+A mind map of the data flow between work packages can be seen below. It is imperative to maintain well documented and easily accessible data and metadata that can flow between the work packages. This can be achieved using version controlled documentation that is updated regularly.
 
- <img src="graphics/project_mind_map.svg" width="800">
+ <img src="graphics/project_mind_map.svg" width="800" alt="">
+
+Data descriptor files should be placed within the relevant work package directory. For each data file in the **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
+
