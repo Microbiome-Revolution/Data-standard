@@ -57,19 +57,21 @@ Data descriptor files should be placed within the relevant work package director
 For example, and acceptable directory in the data repository could be:
 ```
 WP1
+|-- README.md
 |-- field_data/
 |-- |-- field_site_information.csv
 |-- dna_quantification/
-|-- |-- dna_quantification_results.csv/
+|-- |-- dna_quantification_results.csv
 |-- |-- dna_quantification_parameters.csv
 ```
 An appropriate metadata repository would include descriptor files in the following directories in this repository:
 ```
 WP1
+|-- README.md
 |-- field_data/
 |-- |-- field_site_information.md
 |-- dna_quantification/
-|-- |-- dna_quantification_results.md/
+|-- |-- dna_quantification_results.md
 |-- |-- dna_quantification_parameters.md
 ```
 
