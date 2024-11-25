@@ -1,0 +1,1 @@
+## Balig, please include a brief outline in here about how your different data files will flow into each other, the expected data outputs of WP4, and the various components of the WP (metagenomics, virus sequencing, etc.) - not in that order, but the most logical one to you!
