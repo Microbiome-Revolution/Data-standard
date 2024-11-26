@@ -87,17 +87,17 @@ Within the same file, there should be a summary table describing the structure o
 <tr><th>Raw Data </th><th>Metadata</th></tr>
 <tr><td>
 
-| Column&nbsp;1 | Column&nbsp;2 | Column&nbsp;3 |
-|---------|---------|----------|
-| a       | 1       | a1       |
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| a        | 1        | a1       |
 
 </td><td>
 
-| Columns       | Column Description                                                              | Data Description                                                                                                                                   | 
-|---------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Column&nbsp;1 | Column containing alphabetic data                                               | Data contains any of the 26 latin letters in lower case, between a-z                                                                               |
-| Column&nbsp;2 | Column containing numeric data                                                  | Data contains integers                                                                                                                             |
-| Column&nbsp;3 | Column containing alphanumeric data as a combination of Column 1 and Column 2   | Data is alphanumeric combination of the 26 latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
+| Columns  | Column Description                                                            | Data Description                                                                                                                                   | 
+|----------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column 1 | Column containing alphabetic data                                             | Data contains any of the 26 latin letters in lower case, between A-Z                                                                               |
+| Column 2 | Column containing numeric data                                                | Data contains integers                                                                                                                             |
+| Column 3 | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
 </td></tr> </table>
 
 ---
