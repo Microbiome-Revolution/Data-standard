@@ -1,6 +1,6 @@
 #### *dna_quantifications.csv*
 
-- This file contains the outputs from the DNA quantification experiments, following the field sample collection undertaken by Imperial Staff and Farmers.
+- This file contains the outputs from the DNA quantification experiments, following the field sample collection undertaken by Imperial Staff and Farmers between X and Y.
 
 - Data is formatted based on the following metadata:
 

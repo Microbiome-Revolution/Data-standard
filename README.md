@@ -1,7 +1,13 @@
 # The Microbiome Green Revolution's documentation for working with data and metadata
 
+## Table of Contents
+* [FAIR Principles](#fair-principles)
+* [Data Principles](#data-principles)
+* [Working within this repository](#working-within-this-repository)
+* [Git for Collaboration](#git-for-collaboration)
+
 ### FAIR Principles
-This documentation standardises the formatting of sequence data files and sample metadata to comply with reproducible and communicable industry standards. The FAIR principles—Findability, Accessibility, Interoperability, and Reusability—apply directly to data naming conventions of the Microbiome Green Revolution project, ensuring our datasets are well-organised, understandable, and universally usable. Below is an outline of how FAIR principles guide effective data naming practices:
+This documentation standardises the formatting of data files and sample metadata to comply with reproducible and communicable industry standards. The FAIR principles—Findability, Accessibility, Interoperability, and Reusability—apply directly to data naming conventions of the Microbiome Green Revolution project, ensuring our datasets are well-organised, understandable, and universally usable. Below is an outline of how FAIR principles guide effective data naming practices:
 1. Findable
    - **Descriptive Names:** Data files and variables should have meaningful, descriptive names that clearly indicate their content or purpose. For example, names should include project identifiers, experiment types, or dates where relevant.
    - **Consistent Formatting:** Use consistent naming conventions across all files and datasets to make them easier to locate in large repositories. For instance, always use the same date format (e.g., YYYY-MM-DD) or structure (e.g., Project_Condition_Date).
@@ -24,7 +30,16 @@ This documentation standardises the formatting of sequence data files and sample
 
 ### Data Principles
 
-Data file formatting principles for a multidisciplinary biology project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
+**The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and produce understandable documentation. The GitHub LFS repository for storing the Microbiome Green Revolution's raw data can be found here **<link to data repository once it's set up>**.
+
+Raw data consists of the direct outputs of a field observation or a laboratory instrument. It includes: 
+- Quantitative data recorded in a laboratory notebook (e.g. a series of plant heights), transcribed into a spreadsheet or photographed 
+- Raw sequence files (e.g., in fastq format) 
+- Data exported directly from an instrument (e.g. microplate spectrophotometer, real-time PCR machine) into a universal format (e.g. a .csv file) 
+- Data exported directly from an instrument in native file format (e.g. a .ghg file from a LI-COR) 
+- Raw image files (e.g. in .jpeg or .png format) 
+
+Data file formatting principles for a multidisciplinary research project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
 
 1. **File Naming and Metadata:** Each file should have a clear and consistent name that reflects its content and purpose, such as including experiment identifiers or batch numbers (e.g., ```dna_quantifications.csv``` or ```sequencing_qc.csv```). Every dataset should include accompanying metadata that explains the purpose of the file, the meaning of each column, and the format and units of the data. For instance, numerical values such as DNA quantities should clearly specify units (e.g., ```μg/μl```), and dates should follow a consistent format, such as ```dd/mm/yyyy```.
 
@@ -47,6 +62,17 @@ Data file formatting principles for a multidisciplinary biology project should e
    |                  | Clear missing data markers     | ```EMPTY```, ```NA```                       | Blank cells, ```0```               |
    |                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use           | ```Yes```, ```No```, ```N2```      |
 
+<br>
+
+#### Metadata
+The metadata file is integral to our data management plan. It should be possible for an unaffiliated researcher, years in the future, to reconstruct the entire data collection process given the metadata file and its associated raw data file(s). A metadata file should contain, at a minimum: 
+- Enough information to identify the specific experiment from which the data was collected, including date(s) of collection and the identity of the experimenter, and a brief description of the experimental design (e.g. ‘soil microbiome sequence data collected from 100 farms across the UK between April and June 2025;’ ‘MSc project to examine disease severity in wheat inoculated with different strains of G. tritici’)
+  - Do not include an experiment description which would be uninterpretable by an unaffiliated researcher (e.g. ‘samples from second passage;’ ‘Amy’s MSc project’)  
+- Specific GPS location of the experiment (for field-based experiments/samples)  
+- The type of data being collected (e.g. sequence data, index of plant infection level, etc)   
+- Unique identifiers for each individual sample measured, and which raw data file(s) they correspond to.  
+  - These should correspond exactly to the sample names that are written on tubes, bags, or boxes storing those same samples and should correspond to the protocol for naming found in the [sample protocol documentation](https://github.com/Microbiome-Revolution/SampleProtocols). 
+- Additional columns with a description of the treatment groups to which each sample belongs.  
 
 ### Working within this repository
 
@@ -56,7 +82,10 @@ A mind map of the data flow between work packages can be seen below. It is imper
 
 Data descriptor files should be placed within the relevant work package directory. For each data file in the data repository **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
 
-- Within each workpackage directory, please include a ```README.md``` file that outlines the directory structure and purpose of the data.  
+- Within each workpackage directory, please include a ```README.md``` file that outlines the directory structure and purpose of the data. 
+- **If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
+
+
 
 For example, and acceptable directory in the data repository could be:
 ```
@@ -79,7 +108,6 @@ WP1
 |-- |-- dna_quantification_parameters.md
 ```
 
-**If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
 
 
 ### Git for collaboration
