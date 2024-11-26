@@ -83,48 +83,17 @@ A metadata markdown file in this repository should contain a description that ha
 
 Within the same file, there should be a summary table describing the structure of the raw data set. In this table, the columns of the raw data become rows, with a minimum of a column descriptor, explaining what the data in the column is, and a data descriptor, explaining what format the data within the column is in:
 
-[//]: # (<table>)
-
-[//]: # (<tr><th>Raw Data </th><th>Metadata</th></tr>)
-
-[//]: # (<tr><td>)
-
-[//]: # ()
-[//]: # (| Column 1 | Column 2 | Column 3 |)
-
-[//]: # (|----------|----------|----------|)
-
-[//]: # (| a        | 1        | a1       |)
-
-[//]: # ()
-[//]: # (</td><td>)
-
-[//]: # ()
-[//]: # (| Columns  | Column Description                                                            | Data Description                                                                                                                                   | )
-
-[//]: # (|----------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|)
-
-[//]: # (| Column 1 | Column containing alphabetic data                                             | Data contains any of the 26 latin letters in lower case, between A-Z                                                                               |)
-
-[//]: # (| Column 2 | Column containing numeric data                                                | Data contains integers                                                                                                                             |)
-
-[//]: # (| Column 3 | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |)
-
-[//]: # (</td></tr> </table>)
-
-### Raw Data Table
-
+#### Raw Data Table
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | a        | 1        | a1       |
 
-### Metadata Table
-
-| Columns  | Column Description                                                            | Data Description                                                                                                                                   | 
-|----------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Column 1 | Column containing alphabetic data                                             | Data contains any of the 26 Latin letters in lower case, between A-Z                                                                               |
-| Column 2 | Column containing numeric data                                                | Data contains integers                                                                                                                             |
-| Column 3 | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 Latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
+#### Metadata Table
+| Columns         | Column Description                                                            | Data Description                                                                                                                                   | 
+|-----------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column&nbsp;1   | Column containing alphabetic data                                             | Data contains any of the 26 Latin letters in lower case, between A-Z                                                                               |
+| Column&nbsp;2   | Column containing numeric data                                                | Data contains integers                                                                                                                             |
+| Column&nbsp;3   | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 Latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
 
 ---
 
