@@ -1,5 +1,6 @@
 # The Microbiome Green Revolution's documentation for working with data and metadata
 
+### FAIR Principles
 This documentation standardises the formatting of sequence data files and sample metadata to comply with reproducible and communicable industry standards. The FAIR principles—Findability, Accessibility, Interoperability, and Reusability—apply directly to data naming conventions of the Microbiome Green Revolution project, ensuring our datasets are well-organised, understandable, and universally usable. Below is an outline of how FAIR principles guide effective data naming practices:
 1. Findable
    - **Descriptive Names:** Data files and variables should have meaningful, descriptive names that clearly indicate their content or purpose. For example, names should include project identifiers, experiment types, or dates where relevant.
@@ -21,8 +22,9 @@ This documentation standardises the formatting of sequence data files and sample
     - **Temporal and Contextual Consistency:** Data names should be timeless, avoiding transient references (e.g., "latest" or "temp") that lose meaning over time.
     - **Scalable Conventions:** Use naming patterns that can scale as the dataset grows, accommodating new files or variables without disrupting the established system.
 
+### Data Principles
 
-#### Data file formatting principles for a multidisciplinary biology project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
+Data file formatting principles for a multidisciplinary biology project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
 
 1. **File Naming and Metadata:** Each file should have a clear and consistent name that reflects its content and purpose, such as including experiment identifiers or batch numbers (e.g., ```dna_quantifications.csv``` or ```sequencing_qc.csv```). Every dataset should include accompanying metadata that explains the purpose of the file, the meaning of each column, and the format and units of the data. For instance, numerical values such as DNA quantities should clearly specify units (e.g., ```μg/μl```), and dates should follow a consistent format, such as ```dd/mm/yyyy```.
 
@@ -46,7 +48,7 @@ This documentation standardises the formatting of sequence data files and sample
    |                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use           | ```Yes```, ```No```, ```N2```      |
 
 
-#### Working within this repository
+### Working within this repository
 
 A mind map of the data flow between work packages can be seen below. It is imperative to maintain well documented and easily accessible data and metadata that can flow between the work packages. This can be achieved using version controlled documentation that is updated regularly.
 
@@ -80,5 +82,49 @@ WP1
 **If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
 
 
+### Git for collaboration
+#### First, clone the repository to your local system:
+This will create a local copy of the most up-to-date GitHub directory in your system, and will establish a connection between you and the remote repository.
+```
+cd <desired-directory> # Switch to an appropriate directory
 
+git clone git@github.com:Microbiome-Revolution/Data-standard.git
+cd Data-standard # Change to the repo directory
+```
+
+#### Before making changes:
+Before starting new work or resolving conflicts, pull the latest changes. This will make your local version the same as the remote repository on GitHub. You should do this every time before you make changes to the directory on your local system, as in a large collaborative project your local copy will be behind the main branch frequently.
+```
+git fetch origin
+git merge origin/main
+```
+
+#### Create a new branch:
+This switches to a unique branch of the main repository that ensures changes are tracked and isolated to your unique stream. The changes will be merged into the main branch (```main```) at a later point when you are sure the changes should be made to the main repository. **Make sure that the most up-to-date remote repository is the one you actually want to be working on, though, as this is what you will be updating your local copy to.**
+```
+# Create and switch to a new branch
+git checkout -b <branch-name>
+```
+
+#### Check the repository status:
+This will tell you which files you have modified, added or deleted since retrieving the latest version of the repository. 
+```
+git status
+```
+
+#### Modify your data files and commit changes: 
+You can now update the ```README.md``` files and include any graphics or metadata files that you want to include on the remote repository. Make sure that these files adhere to the principles above, and fully work as intended with no errors. You can then add the files, and commit them with an informative message of the change: 
+```
+# Stage your changes
+git add <file-paths>
+
+# Commit with a meaningful message
+git commit -m "Added metadata for WP<X>: <description>"
+```
+
+#### Push and Pull Request
+You can then push these changes to the branch of the remote repository. This then requires merging in the remote repository that is enabled through a "pull request". After pushing to your branch, submit a pull request and tag specific individuals in the MGR team that can review your request and merge the changes. This adds a layer of redundancy and checks that prevent conflicts and accidental information loss.
+```
+git push origin <branch-name>
+```
 
