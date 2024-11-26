@@ -3,8 +3,11 @@
 ## Table of Contents
 * [FAIR Principles](#fair-principles)
 * [Data Principles](#data-principles)
+* [Metadata Principles](#metadata-principles)
 * [Working within this repository](#working-within-this-repository)
 * [Git for Collaboration](#git-for-collaboration)
+
+---
 
 ### FAIR Principles
 This documentation standardises the formatting of data files and sample metadata to comply with reproducible and communicable industry standards. The FAIR principles—Findability, Accessibility, Interoperability, and Reusability—apply directly to data naming conventions of the Microbiome Green Revolution project, ensuring our datasets are well-organised, understandable, and universally usable. Below is an outline of how FAIR principles guide effective data naming practices:
@@ -27,6 +30,8 @@ This documentation standardises the formatting of data files and sample metadata
     - **Clear Metadata Alignment:** Ensure naming conventions align with metadata descriptions, enabling future users to understand the data’s structure and content without additional clarification.
     - **Temporal and Contextual Consistency:** Data names should be timeless, avoiding transient references (e.g., "latest" or "temp") that lose meaning over time.
     - **Scalable Conventions:** Use naming patterns that can scale as the dataset grows, accommodating new files or variables without disrupting the established system.
+
+---
 
 ### Data Principles
 
@@ -64,15 +69,38 @@ Data file formatting principles for a multidisciplinary research project should 
 
 <br>
 
-#### Metadata
-The metadata file is integral to our data management plan. It should be possible for an unaffiliated researcher, years in the future, to reconstruct the entire data collection process given the metadata file and its associated raw data file(s). A metadata file should contain, at a minimum: 
+---
+
+### Metadata Principles
+The metadata file is integral to our data management plan. It should be possible for an unaffiliated researcher, years in the future, to reconstruct the entire data collection process given the metadata file and its associated raw data file(s). 
+
+A metadata markdown file in this repository should contain a description that has, at a minimum: 
 - Enough information to identify the specific experiment from which the data was collected, including date(s) of collection and the identity of the experimenter, and a brief description of the experimental design (e.g. ‘soil microbiome sequence data collected from 100 farms across the UK between April and June 2025;’ ‘MSc project to examine disease severity in wheat inoculated with different strains of G. tritici’)
   - Do not include an experiment description which would be uninterpretable by an unaffiliated researcher (e.g. ‘samples from second passage;’ ‘Amy’s MSc project’)  
 - Specific GPS location of the experiment (for field-based experiments/samples)  
-- The type of data being collected (e.g. sequence data, index of plant infection level, etc)   
-- Unique identifiers for each individual sample measured, and which raw data file(s) they correspond to.  
-  - These should correspond exactly to the sample names that are written on tubes, bags, or boxes storing those same samples and should correspond to the protocol for naming found in the [sample protocol documentation](https://github.com/Microbiome-Revolution/SampleProtocols). 
-- Additional columns with a description of the treatment groups to which each sample belongs.  
+- The type of data being collected (e.g. sequence data, index of plant infection level, etc.)   
+- Any unique identifiers for the specific output data that will be useful in understanding where it has originated from.
+
+Within the same file, there should be a summary table describing the structure of the raw data set. In this table, the columns of the raw data become rows, with a minimum of a column descriptor, explaining what the data in the column is, and a data descriptor, explaining what format the data within the column is in:
+
+<table>
+<tr><th>Raw Data </th><th>Metadata</th></tr>
+<tr><td>
+
+| Column&nbsp;1 | Column&nbsp;2 | Column&nbsp;3 |
+|---------|---------|----------|
+| a       | 1       | a1       |
+
+</td><td>
+
+| Columns       | Column Description                                                              | Data Description                                                                                                                                   | 
+|---------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column&nbsp;1 | Column containing alphabetic data                                               | Data contains any of the 26 latin letters in lower case, between a-z                                                                               |
+| Column&nbsp;2 | Column containing numeric data                                                  | Data contains integers                                                                                                                             |
+| Column&nbsp;3 | Column containing alphanumeric data as a combination of Column 1 and Column 2   | Data is alphanumeric combination of the 26 latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
+</td></tr> </table>
+
+---
 
 ### Working within this repository
 
@@ -108,7 +136,7 @@ WP1
 |-- |-- dna_quantification_parameters.md
 ```
 
-
+---
 
 ### Git for collaboration
 #### First, clone the repository to your local system:
