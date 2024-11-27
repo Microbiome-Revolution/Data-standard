@@ -51,21 +51,24 @@ Data file formatting principles for a multidisciplinary research project should 
 2. **Column Names and Data Description:** Column names should be consistent across all files, using a clear convention like ```snake_case```. For example, columns like plate, well, and sample should have consistent formatting and align with the descriptions provided in the metadata. These descriptions should be detailed, explaining any specific rules or conventions (e.g., plate numbers formatted as ```p1```, ```p2```, etc., and sample IDs that reflect collection details, such as ```7PY.01.18```).
 
 3. **Data Consistency and Standardisation:** All data entries should follow a standard format for each variable. For example, well positions should use an alphanumeric grid system like ```A1``` or ```B12```, and sample IDs should follow a predefined naming convention that reflects the collection method or source. Numeric fields should adhere to defined ranges or thresholds, while categorical variables (e.g., levels of inoculum or nitrogen treatments) must use consistent, pre-established labels.
+   - **The data within columns should not contain values that could be treated as delimiters, such as commas, spaces, tabs, etc.** 
+   - **If there are multiple data points within a single cell, it is always best to split the values into a new column to maintain a consistent format that does not require editing to be interpreted and analysed.**  
 
 4. **Handling Missing Data:** Missing or unused data should be clearly marked using standardised values such as "EMPTY" for wells that are intentionally left unused or "NA" for unavailable data. This ensures missing data can be easily identified and managed in subsequent analyses.
 
 5. **Data Structure for Analysis:** Files should be structured to facilitate integration into downstream processes, such as statistical analyses or modelling. Each row should correspond to an individual observation (e.g., wells, plants, or samples), and each column should represent a single variable. A tidy data structure should be maintained, where every variable has a dedicated column and every observation occupies a single row.
 
-   | Category         | Principle                      | Good Example                             | Bad Example                        |
-   |------------------|--------------------------------|------------------------------------------|------------------------------------| 
-   | Column Names     | Consistent formatting          | ```sample_id```, ```plant_weight```      | ```SampleID```, ```Plant Weight``` |
-   |                  | Descriptive and clear          | ```well_position```, ```dna_quantity```  | ```wp```, ```quantity```           |
-   |                  | Standardised convention        | ```snake_case``` (e.g., ```sample_id```) | ```SAMPLEID```, ```sample.id```    |
-   |                  | No special characters          | ```plate_number```                       | ```plate#```                       |
-   | Data Conventions | Standardised units             | ```μg/μl```, ```g```                     | No units or mixed units            |
-   |                  | Uniform date formats           | ```dd/mm/yyyy```                         | mm/dd/yyyy, 2024-Nov-25            |
-   |                  | Clear missing data markers     | ```EMPTY```, ```NA```                    | Blank cells, ```0```               |
-   |                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use        | ```Yes```, ```No```, ```N2```      |
+   | Category         | Principle                     | Good Example                             | Bad Example                        |
+   |------------------|-------------------------------|------------------------------------------|------------------------------------| 
+   | Column Names     | Consistent formatting         | ```sample_id```, ```plant_weight```      | ```SampleID```, ```Plant Weight``` |
+   |                  | Descriptive and clear         | ```well_position```, ```dna_quantity```  | ```wp```, ```quantity```           |
+   |                  | Standardised convention       | ```snake_case``` (e.g., ```sample_id```) | ```SAMPLEID```, ```sample.id```    |
+   |                  | No special characters         | ```plate_number```                       | ```plate#```                       |
+   | Data Conventions | Standardised units            | ```μg/μl```, ```g```                     | No units or mixed units            |
+   |                  | Uniform date formats          | ```dd/mm/yyyy```                         | mm/dd/yyyy, 2024-Nov-25            |
+   |                  | Clear missing data markers    | ```EMPTY```, ```NA```                    | Blank cells, ```0```               |
+   |                  | Predefined categorical labels | ```N```, ```Y``` for nitrogen use        | ```Yes```, ```No```, ```N2```      |
+   |                  | Data values                   |                                          |                                    | 
 
 <br>
 
