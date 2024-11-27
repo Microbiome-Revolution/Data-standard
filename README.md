@@ -46,9 +46,9 @@ Raw data consists of the direct outputs of a field observation or a laboratory i
 
 Data file formatting principles for a multidisciplinary research project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
 
-1. **File Naming and Metadata:** Each file should have a clear and consistent name that reflects its content and purpose, such as including experiment identifiers or batch numbers (e.g., ```dna_quantifications.csv``` or ```sequencing_qc.csv```). Every dataset should include accompanying metadata that explains the purpose of the file, the meaning of each column, and the format and units of the data. For instance, numerical values such as DNA quantities should clearly specify units (e.g., ```μg/μl```), and dates should follow a consistent format, such as ```dd/mm/yyyy```.
+1. **File Naming and Metadata:** Each file should have a clear and consistent name that reflects its content and purpose, such as including experiment identifiers or batch numbers (e.g., ```dna_quantifications.csv``` or ```sequencing_qc.csv```). Every dataset should include accompanying metadata that explains the purpose of the file, the meaning of each column, and the format and units of the data. For instance, numerical values such as DNA quantities should clearly specify units (e.g., ```μg/μl```), and dates should follow the consistent format ```dd/mm/yyyy```.
 
-2. **Column Names and Data Description:** Column names should be consistent across all files, using a clear convention like ```snake_case``` or ```camelCase```. For example, columns like plate, well, and sample should have consistent formatting and align with the descriptions provided in the metadata. These descriptions should be detailed, explaining any specific rules or conventions (e.g., plate numbers formatted as ```p1```, ```p2```, etc., and sample IDs that reflect collection details, such as ```7PY.01.18```).
+2. **Column Names and Data Description:** Column names should be consistent across all files, using a clear convention like ```snake_case```. For example, columns like plate, well, and sample should have consistent formatting and align with the descriptions provided in the metadata. These descriptions should be detailed, explaining any specific rules or conventions (e.g., plate numbers formatted as ```p1```, ```p2```, etc., and sample IDs that reflect collection details, such as ```7PY.01.18```).
 
 3. **Data Consistency and Standardisation:** All data entries should follow a standard format for each variable. For example, well positions should use an alphanumeric grid system like ```A1``` or ```B12```, and sample IDs should follow a predefined naming convention that reflects the collection method or source. Numeric fields should adhere to defined ranges or thresholds, while categorical variables (e.g., levels of inoculum or nitrogen treatments) must use consistent, pre-established labels.
 
@@ -56,16 +56,16 @@ Data file formatting principles for a multidisciplinary research project should 
 
 5. **Data Structure for Analysis:** Files should be structured to facilitate integration into downstream processes, such as statistical analyses or modelling. Each row should correspond to an individual observation (e.g., wells, plants, or samples), and each column should represent a single variable. A tidy data structure should be maintained, where every variable has a dedicated column and every observation occupies a single row.
 
-   | Category         | Principle                      | Good Example                                | Bad Example                        |
-   |------------------|--------------------------------|---------------------------------------------|------------------------------------| 
-   | Column Names     | Consistent formatting          | ```sample_id```, ```plant_weight```         | ```SampleID```, ```Plant Weight``` |
-   |                  | Descriptive and clear          | ```well_position```, ```dna_quantity```     | ```wp```, ```quantity```           |
-   |                  | Standardised convention        | ```lowerCamelCase``` (e.g., ```sampleId```) | ```SAMPLEID```, ```sample.id```    |
-   |                  | No special characters          | ```plate_number```                          | ```plate#```                       |
-   | Data Conventions | Standardised units             | ```μg/μl```, ```g```                        | No units or mixed units            |
-   |                  | Uniform date formats           | ```dd/mm/yyyy```                            | mm/dd/yyyy, 2024-Nov-25            |
-   |                  | Clear missing data markers     | ```EMPTY```, ```NA```                       | Blank cells, ```0```               |
-   |                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use           | ```Yes```, ```No```, ```N2```      |
+   | Category         | Principle                      | Good Example                             | Bad Example                        |
+   |------------------|--------------------------------|------------------------------------------|------------------------------------| 
+   | Column Names     | Consistent formatting          | ```sample_id```, ```plant_weight```      | ```SampleID```, ```Plant Weight``` |
+   |                  | Descriptive and clear          | ```well_position```, ```dna_quantity```  | ```wp```, ```quantity```           |
+   |                  | Standardised convention        | ```snake_case``` (e.g., ```sample_id```) | ```SAMPLEID```, ```sample.id```    |
+   |                  | No special characters          | ```plate_number```                       | ```plate#```                       |
+   | Data Conventions | Standardised units             | ```μg/μl```, ```g```                     | No units or mixed units            |
+   |                  | Uniform date formats           | ```dd/mm/yyyy```                         | mm/dd/yyyy, 2024-Nov-25            |
+   |                  | Clear missing data markers     | ```EMPTY```, ```NA```                    | Blank cells, ```0```               |
+   |                  | Predefined categorical labels  | ```N```, ```Y``` for nitrogen use        | ```Yes```, ```No```, ```N2```      |
 
 <br>
 
@@ -105,7 +105,8 @@ A mind map of the data flow between work packages can be seen below. It is imper
 
 Data descriptor files should be placed within the relevant work package directory. For each data file in the data repository **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
 
-- Within each workpackage directory, please include a ```README.md``` file that outlines the directory structure and purpose of the data. 
+- **Within each workpackage directory, please include a ```README.md``` file that outlines the directory structure and purpose of the data.**
+- **
 - **If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
 
 
@@ -134,6 +135,9 @@ WP1
 ---
 
 ### Git for collaboration
+There are 3 methods to interact with this repository using Git. Firstly, you can directly upload files and edit readme documents using the GitHub website. Second, you can download the GitHub Desktop application on Windows and Mac. Third, using Git on your local machine in terminal by cloning the repository. The process for achieving this can be seen below:
+
+
 #### First, clone the repository to your local system:
 This will create a local copy of the most up-to-date GitHub directory in your system, and will establish a connection between you and the remote repository.
 ```
