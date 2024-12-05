@@ -1,7 +1,6 @@
 # The Microbiome Green Revolution's documentation for working with data and metadata
 
 ## Table of Contents
-* [FAIR Principles](#fair-principles)
 * [Data Principles](#data-principles)
 * [Metadata Principles](#metadata-principles)
 * [Working within this repository](#working-within-this-repository)
@@ -9,44 +8,23 @@
 
 ---
 
-### FAIR Principles
-This documentation standardises the formatting of data files and sample metadata to comply with reproducible and communicable industry standards. The FAIR principles—Findability, Accessibility, Interoperability, and Reusability—apply directly to data naming conventions of the Microbiome Green Revolution project, ensuring our datasets are well-organised, understandable, and universally usable. Below is an outline of how FAIR principles guide effective data naming practices:
-1. Findable
-   - **Descriptive Names:** Data files and variables should have meaningful, descriptive names that clearly indicate their content or purpose. For example, names should include project identifiers, experiment types, or dates where relevant.
-   - **Consistent Formatting:** Use consistent naming conventions across all files and datasets to make them easier to locate in large repositories. For instance, always use the same date format (e.g., YYYY-MM-DD) or structure (e.g., Project_Condition_Date).
-   - **Unique Identifiers:** Ensure each dataset or file name is unique within the context of the project or repository, avoiding duplication or ambiguity.
-
-2. Accessible
-    - **Human-Readable Names:** Names should be easy to interpret by both humans and machines, avoiding overly cryptic codes or excessive abbreviations.
-    - **No Special Characters:** Avoid spaces, special characters, or symbols in names that might interfere with software or database queries. Instead, use underscores (_) or hyphens (-) to separate words.
-    - **Logical Organisation:** Files should be systematically named and stored to allow straightforward navigation, supporting accessibility within and across systems.
-
-3. Interoperable
-    - **Standardised Conventions:** Adopt widely accepted naming conventions that are compatible with various software, systems, and disciplines. For instance, follow established formats like snake_case or camelCase.
-    - **Versioning:** Use version control to maintain and clarify relationships between iterations.
-    - **Avoid Context Dependency:** Names should stand alone without requiring external context to interpret their meaning, ensuring compatibility across systems and teams.
-
-4. Reusable
-    - **Clear Metadata Alignment:** Ensure naming conventions align with metadata descriptions, enabling future users to understand the data’s structure and content without additional clarification.
-    - **Temporal and Contextual Consistency:** Data names should be timeless, avoiding transient references (e.g., "latest" or "temp") that lose meaning over time.
-    - **Scalable Conventions:** Use naming patterns that can scale as the dataset grows, accommodating new files or variables without disrupting the established system.
-
----
-
 ### Data Principles
 
-**The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and produce understandable documentation. The GitHub LFS repository for storing the Microbiome Green Revolution's raw data can be found here **<link to data repository once it's set up>**.
+**The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and methods, and produce understandable documentation. This repository is set up using GitHub LFS to store the Microbiome Green Revolution's data and associated metadata.
 
-Raw data consists of the direct outputs of a field observation or a laboratory instrument. It includes: 
-- Quantitative data recorded in a laboratory notebook (e.g. a series of plant heights), transcribed into a spreadsheet or photographed 
-- Raw sequence files (e.g., in fastq format) 
-- Data exported directly from an instrument (e.g. microplate spectrophotometer, real-time PCR machine) into a universal format (e.g. a .csv file) 
-- Data exported directly from an instrument in native file format (e.g. a .ghg file from a LI-COR) 
+The data consists of the outputs from field observations or laboratory experiments that have been organised into a readable and accessible format. The primary goal of this repository is to keep well documented and compact data, avoiding redundant and duplicated files, using version control.  
+
+Data consists of the outputs of a field observation or a laboratory instrument formatted into a accessible file rather than direct outputs. This is primarily because of the nature of the project requiring a large amount of data to be spread across an interdisciplinary team, requiring immediate access to usable data. It includes: 
+- Quantitative data recorded in a laboratory notebook (e.g. a series of plant heights), transcribed into a spreadsheet 
+- Data exported directly from an instrument (e.g. microplate spectrophotometer, real-time PCR machine) into a universal format (e.g. a .csv file) and organised appropriately into a single file
 - Raw image files (e.g. in .jpeg or .png format) 
+- Raw sequence files (e.g., in fastq format) should **not be included in this repository**
 
-Data file formatting principles for a multidisciplinary research project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
+Data file formatting principles for this project should ensure clarity, consistency, and usability across all datasets. The following guidelines should be followed:
 
-1. **File Naming and Metadata:** Each file should have a clear and consistent name that reflects its content and purpose, such as including experiment identifiers or batch numbers (e.g., ```dna_quantifications.csv``` or ```sequencing_qc.csv```). Every dataset should include accompanying metadata that explains the purpose of the file, the meaning of each column, and the format and units of the data. For instance, numerical values such as DNA quantities should clearly specify units (e.g., ```μg/μl```), and dates should follow the consistent format ```dd/mm/yyyy```.
+- Each file should have a clear and consistent name that reflects its content and purpose. For example, dna quantifications of falmer kit samples should be named ```falmer_kit_dna_quantifications.csv```, to allow additions to be made to the file without naming changes. 
+<br> <br>
+- Every dataset should include an accompanying metadata markdown file that explains the purpose of the file, named with the same prefix as the file it describes, e.g. the above file's metadata would be named ```falmer_kits_dna_quantifications.md```
 
 2. **Column Names and Data Description:** Column names should be consistent across all files, using a clear convention like ```snake_case```. For example, columns like plate, well, and sample should have consistent formatting and align with the descriptions provided in the metadata. These descriptions should be detailed, explaining any specific rules or conventions (e.g., plate numbers formatted as ```p1```, ```p2```, etc., and sample IDs that reflect collection details, such as ```7PY.01.18```).
 
