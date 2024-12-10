@@ -1,6 +1,10 @@
-# The Microbiome Green Revolution's documentation for working with data and metadata
+# The Microbiome Green Revolution's data storage and documentation repository
 
-## Table of Contents
+### The purpose of this repository is to store data that is created using the protocols detailed in the projects [Sample Protocol repository](https://github.com/Microbiome-Revolution/SampleProtocols). This repository should *not* be used for storing data that is irrelevant to the study aims, accessory to main files that are essential to the project and its analyses, or inaccessible data. 
+
+### Before contributing to this repository, please familiarise yourself with the data and metadata principles below for how to structure your files appropriately, including all necessary information outlined in the protocols. 
+
+# Table of Contents
 * [Data Principles](#data-principles)
 * [Metadata Principles](#metadata-principles)
 * [Working within this repository](#working-within-this-repository)
@@ -30,7 +34,7 @@ Data file formatting principles for this project should ensure clarity, consiste
 - All data entries should follow a standard format for each variable. For example, well positions should use an alphanumeric grid system like ```A1``` or ```B12```, and sample IDs should follow a predefined naming convention. that reflects the collection method or source. Numeric fields should adhere to defined ranges or thresholds, while categorical variables (e.g., levels of inoculum or nitrogen treatments) must use consistent, pre-established labels.
    - **The data within columns should not contain values that could be treated as delimiters, such as commas, spaces, tabs, etc.** 
    - **If there are multiple data points within a single cell, it is always best to split the values into a new column to maintain a consistent format that does not require editing to be interpreted and analysed.**  
-<br>
+<br> <br>
 - Missing or unused data should be clearly marked using standardised values such as "EMPTY" for values that are intentionally left unused or "NA" for unavailable data. This ensures missing data can be easily identified and managed in subsequent analyses.
 <br> <br>
 - Files should be structured to facilitate integration into downstream processes, such as statistical analyses or modelling. Each row should correspond to an individual observation (e.g., wells, plants, or samples), and each column should represent a single variable. Every variable has a dedicated column and every observation occupies a single row.
