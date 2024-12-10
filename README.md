@@ -4,17 +4,24 @@
 
 ### Before contributing to this repository, please familiarise yourself with the data and metadata principles below for how to structure your files appropriately, including all necessary information outlined in the protocols. 
 
+### This repository is set up using GitHub LFS to store the Microbiome Green Revolution's data and associated metadata, with a primary goal being to keep well documented and compact data, avoiding redundant and duplicated files, using version control.  
+
+
 # Table of Contents
 * [Data Principles](#data-principles)
 * [Metadata Principles](#metadata-principles)
-* [Working within this repository](#working-within-this-repository)
+* [Directory Structure](#directory-structure)
 * [Git for Collaboration](#git-for-collaboration)
 
 ---
 
 ### Data Principles
 
-**The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and methods, and produce understandable documentation. This repository is set up using GitHub LFS to store the Microbiome Green Revolution's data and associated metadata, with a primary goal being to keep well documented and compact data, avoiding redundant and duplicated files, using version control.  
+A mind map of the data flow between work packages can be seen below. It is imperative to maintain well documented and easily accessible data and metadata that can flow between the work packages. This can be achieved using version controlled documentation that is updated regularly.
+
+ <img src="graphics/project_mind_map.svg" width="800" alt="">
+
+**The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and methods, and produce understandable documentation. 
 
 Data consists of the outputs of a field observation or a laboratory instrument formatted into a accessible file rather than direct outputs. This is primarily because of the nature of the project requiring a large amount of data to be spread across an interdisciplinary team, requiring immediate access to usable data. It includes: 
 - Quantitative data recorded in a laboratory notebook (e.g. a series of plant heights), transcribed into a spreadsheet 
@@ -34,7 +41,7 @@ Data file formatting principles for this project should ensure clarity, consiste
 - All data entries should follow a standard format for each variable. For example, well positions should use an alphanumeric grid system like ```A1``` or ```B12```, and sample IDs should follow a predefined naming convention. that reflects the collection method or source. Numeric fields should adhere to defined ranges or thresholds, while categorical variables (e.g., levels of inoculum or nitrogen treatments) must use consistent, pre-established labels.
    - **The data within columns should not contain values that could be treated as delimiters, such as commas, spaces, tabs, etc.** 
    - **If there are multiple data points within a single cell, it is always best to split the values into a new column to maintain a consistent format that does not require editing to be interpreted and analysed.**  
-<br> <br>
+<br>
 - Missing or unused data should be clearly marked using standardised values such as "EMPTY" for values that are intentionally left unused or "NA" for unavailable data. This ensures missing data can be easily identified and managed in subsequent analyses.
 <br> <br>
 - Files should be structured to facilitate integration into downstream processes, such as statistical analyses or modelling. Each row should correspond to an individual observation (e.g., wells, plants, or samples), and each column should represent a single variable. Every variable has a dedicated column and every observation occupies a single row.
@@ -68,52 +75,37 @@ A metadata markdown file in this repository should contain a description that ha
 
 Within the same file, there should be a summary table describing the structure of the raw data set. In this table, the columns of the raw data become rows, with a minimum of a column descriptor, explaining what the data in the column is, and a data descriptor, explaining what format the data within the column is in:
 
+Additionally, there should be an embedded URL to the sample protocol used to create the data files. If a sample protocol is not available, for example because it was produced externally, the metadata file should contain as much information about the collection methods and contents as possible. 
+
 #### Raw Data Table
-| Column 1 | Column 2 | Column 3 |
+| Column_1 | Column_2 | Column_3 |
 |----------|----------|----------|
 | a        | 1        | a1       |
 
 #### Metadata Table
-| Columns         | Column Description                                                            | Data Description                                                                                                                                   | 
-|-----------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Column&nbsp;1   | Column containing alphabetic data                                             | Data contains any of the 26 Latin letters in lower case, between A-Z                                                                               |
-| Column&nbsp;2   | Column containing numeric data                                                | Data contains integers                                                                                                                             |
-| Column&nbsp;3   | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 Latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
+| Columns  | Column Description                                                            | Data Description                                                                                                                                   | 
+|----------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column_1 | Column containing alphabetic data                                             | Data contains any of the 26 Latin letters in lower case, between A-Z                                                                               |
+| Column_2 | Column containing numeric data                                                | Data contains integers                                                                                                                             |
+| Column_3 | Column containing alphanumeric data as a combination of Column 1 and Column 2 | Data is alphanumeric combination of the 26 Latin letters in lower case, and integers, in the form of "xy" where x is the letter and y the integer. |
 
 ---
 
-### Working within this repository
+### Directory Structure
 
-A mind map of the data flow between work packages can be seen below. It is imperative to maintain well documented and easily accessible data and metadata that can flow between the work packages. This can be achieved using version controlled documentation that is updated regularly.
-
- <img src="graphics/project_mind_map.svg" width="800" alt="">
-
-Data descriptor files should be placed within the relevant work package directory. For each data file in the data repository **<link to data repository once it's set up>** there must be a metadata or data descriptor file in this repository. The structure of the data sets within the WP directories should reflect the data directories, meaning if single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.   
-
-- **Within each workpackage directory, please include a ```README.md``` file that outlines the directory structure and purpose of the data.**
-- **
+Data descriptor files should be placed within the relevant work package directory, with sub-directories containing the data and metadata. If single analyses produce relevant, grouped data sets, then these should be placed into subdirectories in the data repository with their corresponding metadata file in this repository.
+ 
+- **Within each work package directory, please include a ```README.md``` file that outlines the directory structure and a broad purpose of the data.**
 - **If you enter a data file into the data repository, and don't include a corresponding descriptor/metadata file here, please know that no one will understand what it is for.** 
 
-
-
-For example, and acceptable directory in the data repository could be:
+An appropriate work package repository would include descriptor files in the following directories in this repository:
 ```
 WP1
 |-- README.md
-|-- field_data/
-|-- |-- field_site_information.csv
 |-- dna_quantification/
 |-- |-- dna_quantification_results.csv
-|-- |-- dna_quantification_parameters.csv
-```
-An appropriate metadata repository would include descriptor files in the following directories in this repository:
-```
-WP1
-|-- README.md
-|-- field_data/
-|-- |-- field_site_information.md
-|-- dna_quantification/
 |-- |-- dna_quantification_results.md
+|-- |-- dna_quantification_parameters.csv
 |-- |-- dna_quantification_parameters.md
 ```
 
