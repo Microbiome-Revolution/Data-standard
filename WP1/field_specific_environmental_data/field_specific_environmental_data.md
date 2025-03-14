@@ -30,10 +30,18 @@
 | fertiliser_use_potassium | Response to wheather or not Potassium based fertilizer has been applied to the fields | Yes, No |
 | fertiliser_use_micronutrients | Response to wheather or not Micronutrient fertilizer has been applied to the fields | Yes, No |
 | fertiliser_use_other | Response to wheather or not Other types of fertilizers has been applied to the fields | Yes, No |
-| fertiliser_application_rate | Temporal rate at which fertilisers have been applied to the field | Every 6 months, Yearly, Every two years, Other |
+| fertiliser_application_rate_monthly | Response to temporal rate at which fertilisers have been applied to the field Monthly |  Yes, No |
+| fertiliser_application_rate_every_six_months | Response to temporal rate at which fertilisers have been applied to the field Every six months |  Yes, No |
+| fertiliser_application_rate_yearly | Response to temporal rate at which fertilisers have been applied to the field Yearly |  Yes, No |
+| fertiliser_application_rate_every_two_years | Response to temporal rate at which fertilisers have been applied to the field Every two years |  Yes, No |
+| fertiliser_application_rate_every_other | Response to temporal rate at which fertilisers have been applied to the field at other rates |  Yes, No |
 | At what rate has this fertiliser combination been applied? | Spatial rate at which fertilisers have been applied | Free text e.g. 3kg/ha |
 | manure_use | Response to application of manure on fields | Yes, No |
-| manure_application_rate | Temporal rate at which manure has been applied to the field | Every 6 months, Yearly, Every two years, Other |
+| manure_application_rate_monthly | Response to temporal rate at which manure has been applied to the field Monthly | Yes, No |
+| manure_application_rate_every_six_months | Response to temporal rate at which manure has been applied to the field Every six months | Yes, No |
+| manure_application_rate_yearly | Response to temporal rate at which manure has been applied to the field Yearly | Yes, No |
+| manure_application_rate_every_two_years | Response to temporal rate at which manure has been applied to the field Every two years | Yes, No |
+| manure_application_rate_other | Response to temporal rate at which manure has been applied to the field at other rates | Yes, No |
 | At what rate has manure been applied? | Spatial rate at which the manure has been added to the field. | Free text e.g. 3kg/ha |
 | pesticides__insecticides_use | The brand name of Pesticides/Insecticides used. | No; Yes, Free text of brand name provided by farmers  |
 | fungicides_use | The brand name of Fungicides used. | No; Yes, Free text of brand name provided by farmers |
