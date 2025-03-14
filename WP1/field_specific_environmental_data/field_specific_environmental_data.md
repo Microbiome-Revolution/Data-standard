@@ -25,7 +25,11 @@
 | take_all_seen | Response to whether Take-All has been observed or not | Yes, No | 
 | take_all_evidence | Observed indications of the Take-All diseases in their wheat fields over the years | None, Black lesions on roots, Reduced yields, Premature death, Bleaching/discolouration, Lower tillering, Other (please specify) |
 | take_all_time | Time frame in which the Take-All disease has been observed in the field. | One yea, Two years, Three years, Four years, Five or more years |
-| fertiliser_use | Main components of fertilisers used if any. | Nitrogen, Phosphous, Potassium, Micronutrients, Other (please list with semicolons) |
+| fertiliser_use_nitrogen | Response to wheather or not Nitrogen based fertilizer has been applied to the fields | Yes, No |
+| fertiliser_use_phosphous | Response to wheather or not Phosphorus based fertilizer has been applied to the fields | Yes, No |
+| fertiliser_use_potassium | Response to wheather or not Potassium based fertilizer has been applied to the fields | Yes, No |
+| fertiliser_use_micronutrients | Response to wheather or not Micronutrient fertilizer has been applied to the fields | Yes, No |
+| fertiliser_use_other | Response to wheather or not Other types of fertilizers has been applied to the fields | Yes, No |
 | fertiliser_application_rate | Temporal rate at which fertilisers have been applied to the field | Every 6 months, Yearly, Every two years, Other |
 | At what rate has this fertiliser combination been applied? | Spatial rate at which fertilisers have been applied | Free text e.g. 3kg/ha |
 | manure_use | Response to application of manure on fields | Yes, No |
