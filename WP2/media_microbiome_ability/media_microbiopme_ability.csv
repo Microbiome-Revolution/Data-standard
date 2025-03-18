@@ -1,0 +1,241 @@
+Experiment,Plant,Medium,Bacteria_applications,Feed,Dry_weight,Germination_rate
+exp2,pl1,Gravel ,Limited,Yes,0.2106,3
+exp2,pl2,Sand,Never,No,0.0605,2
+exp2,pl3,Compost,Never,Yes,0.1152,4
+exp2,pl4,Vermiculite ,Always,No,0.0341,4
+exp2,pl5,Perlite,Always,Yes,0.0335,1
+exp2,pl6,Perlite,Always,No,0.0098,3
+exp2,pl7,Gravel ,Never,Yes,0.3297,4
+exp2,pl8,Vermiculite ,Limited,No,0.0265,4
+exp2,pl9,Sand,Limited,Yes,0.0719,2
+exp2,pl10,Compost,Limited,No,0.2731,3
+exp2,pl11,Sand,Always,Yes,0.075,4
+exp2,pl12,Perlite,Limited,No,0.0065,2
+exp2,pl13,Vermiculite ,Limited,Yes,0.0663,4
+exp2,pl14,Gravel ,Limited,No,0.0429,4
+exp2,pl15,Compost,Limited,Yes,0.2604,3
+exp2,pl16,Vermiculite ,Never,No,0.0209,3
+exp2,pl17,Gravel ,Always,Yes,0.2723,3
+exp2,pl18,Compost,Never,No,0.3405,3
+exp2,pl19,Sand,Always,No,0.0363,4
+exp2,pl20,Perlite,Limited,Yes,0.0253,3
+exp2,pl21,Perlite,Never,No,0.0144,3
+exp2,pl22,Vermiculite ,Always,Yes,0.1058,3
+exp2,pl23,Compost,Always,Yes,0.1566,3
+exp2,pl24,Sand,Limited,No,0.023,2
+exp2,pl25,Gravel ,Never,No,0.0683,3
+exp2,pl26,Sand,Never,Yes,0.0827,4
+exp2,pl27,Gravel ,Always,No,0.0683,2
+exp2,pl28,Vermiculite ,Never,Yes,0.087,4
+exp2,pl29,Perlite,Never,Yes,0.0263,1
+exp2,pl30,Compost,Always,No,0.3787,4
+exp2,pl31,Perlite,Limited,Yes,0.0279,1
+exp2,pl32,Vermiculite ,Never,No,0.0278,3
+exp2,pl33,Sand,Always,Yes,0.0772,4
+exp2,pl34,Compost,Never,No,0.3238,4
+exp2,pl35,Gravel ,Never,Yes,0.4015,3
+exp2,pl36,Gravel ,Limited,Yes,0.3666,1
+exp2,pl37,Compost,Always,No,0.4604,3
+exp2,pl38,Vermiculite ,Always,Yes,0.083,4
+exp2,pl39,Perlite,Always,Yes,0.021,1
+exp2,pl40,Sand,Always,No,0.0319,4
+exp2,pl41,Gravel ,Always,Yes,,0
+exp2,pl42,Sand,Limited,No,0.0206,3
+exp2,pl43,Perlite,Always,No,0.0122,1
+exp2,pl44,Vermiculite ,Limited,No,0.0304,4
+exp2,pl45,Compost,Always,Yes,0.1248,4
+exp2,pl46,Sand,Limited,Yes,0.105,4
+exp2,pl47,Vermiculite ,Limited,Yes,0.0658,4
+exp2,pl48,Compost,Limited,No,0.3752,4
+exp2,pl49,Perlite,Limited,No,0.0142,1
+exp2,pl50,Gravel ,Never,No,0.0407,2
+exp2,pl51,Perlite,Never,No,0.007,3
+exp2,pl52,Sand,Never,No,0.0297,4
+exp2,pl53,Vermiculite ,Never,Yes,0.1004,4
+exp2,pl54,Gravel ,Limited,No,0.0773,4
+exp2,pl55,Compost,Never,Yes,0.3411,4
+exp2,pl56,Sand,Never,Yes,0.0662,3
+exp2,pl57,Compost,Limited,Yes,0.2059,4
+exp2,pl58,Perlite,Never,Yes,,0
+exp2,pl59,Gravel ,Always,No,0.0311,3
+exp2,pl60,Vermiculite ,Always,No,0.0311,3
+exp2,pl61,Vermiculite ,Always,Yes,0.0675,1
+exp2,pl62,Compost,Always,Yes,0.1982,4
+exp2,pl63,Gravel ,Never,No,0.0282,1
+exp2,pl64,Perlite,Never,No,0.0079,3
+exp2,pl65,Sand,Limited,No,0.0254,3
+exp2,pl66,Sand,Never,No,0.0231,4
+exp2,pl67,Compost,Never,Yes,0.3378,3
+exp2,pl68,Perlite,Always,Yes,0.0311,1
+exp2,pl69,Gravel ,Limited,Yes,0.3219,3
+exp2,pl70,Vermiculite ,Always,No,0.0359,4
+exp2,pl71,Perlite,Limited,No,0.013,1
+exp2,pl72,Vermiculite ,Limited,Yes,0.0419,3
+exp2,pl73,Compost,Limited,Yes,0.2264,4
+exp2,pl74,Sand,Always,Yes,0.0896,4
+exp2,pl75,Gravel ,Limited,No,0.0342,3
+exp2,pl76,Gravel ,Always,Yes,0.3478,4
+exp2,pl77,Compost,Never,No,0.2618,4
+exp2,pl78,Perlite,Limited,Yes,,1
+exp2,pl79,Vermiculite ,Never,No,0.0302,2
+exp2,pl80,Sand,Always,No,0.0373,4
+exp2,pl81,Gravel ,Always,No,0.0316,2
+exp2,pl82,Vermiculite ,Never,Yes,0.1832,3
+exp2,pl83,Compost,Always,No,0.3986,3
+exp2,pl84,Sand,Never,Yes,0.0851,4
+exp2,pl85,Perlite,Never,Yes,0.025,1
+exp2,pl86,Gravel ,Never,Yes,0.3944,2
+exp2,pl87,Vermiculite ,Limited,No,0.0266,2
+exp2,pl88,Compost,Limited,No,0.3928,4
+exp2,pl89,Perlite,Always,No,,0
+exp2,pl90,Sand,Limited,Yes,0.067,4
+exp2,pl91,Vermiculite ,Limited,Yes,0.1055,2
+exp2,pl92,Compost,Limited,No,0.4506,4
+exp2,pl93,Gravel ,Never,No,0.0122,1
+exp2,pl94,Sand,Limited,Yes,0.0952,3
+exp2,pl95,Perlite,Limited,No,0.0097,2
+exp2,pl96,Compost,Always,No,0.4156,3
+exp2,pl97,Vermiculite ,Always,Yes,0.0809,2
+exp2,pl98,Sand,Always,No,0.034,3
+exp2,pl99,Gravel ,Limited,Yes,0.3744,1
+exp2,pl100,Perlite,Always,Yes,,0
+exp2,pl101,Sand,Limited,No,0.0299,4
+exp2,pl102,Perlite,Always,No,0.0136,2
+exp2,pl103,Compost,Always,Yes,0.2139,4
+exp2,pl104,Gravel ,Always,Yes,,0
+exp2,pl105,Vermiculite ,Limited,No,0.0253,2
+exp2,pl106,Compost,Limited,Yes,0.2599,4
+exp2,pl107,Perlite,Never,Yes,0.0326,1
+exp2,pl108,Vermiculite ,Always,No,0.0499,4
+exp2,pl109,Sand,Never,Yes,0.0971,2
+exp2,pl110,Gravel ,Always,No,0.0467,4
+exp2,pl111,Sand,Never,No,0.0375,2
+exp2,pl112,Vermiculite ,Never,Yes,0.1052,4
+exp2,pl113,Compost,Never,Yes,0.1475,4
+exp2,pl114,Perlite,Never,No,0.0104,2
+exp2,pl115,Gravel ,Limited,No,0.0369,2
+exp2,pl116,Vermiculite ,Never,No,0.0282,3
+exp2,pl117,Sand,Always,Yes,0.0541,3
+exp2,pl118,Gravel ,Never,Yes,0.3553,4
+exp2,pl119,Perlite,Limited,Yes,,0
+exp2,pl120,Compost,Never,No,0.3235,3
+exp2,pl121,Sand,Always,Yes,0.0471,3
+exp2,pl122,Perlite,Limited,No,0.0113,2
+exp2,pl123,Vermiculite ,Limited,Yes,0.1372,4
+exp2,pl124,Gravel ,Limited,No,0.0555,1
+exp2,pl125,Compost,Limited,Yes,0.1457,3
+exp2,pl126,Perlite,Never,No,0.0163,1
+exp2,pl127,Vermiculite ,Always,Yes,0.0833,4
+exp2,pl128,Compost,Always,Yes,0.1839,4
+exp2,pl129,Sand,Limited,No,0.0303,3
+exp2,pl130,Gravel ,Never,No,0.0466,4
+exp2,pl131,Gravel ,Limited,Yes,0.3409,2
+exp2,pl132,Sand,Never,No,0.0258,2
+exp2,pl133,Compost,Never,Yes,0.2518,4
+exp2,pl134,Vermiculite ,Always,No,0.0183,3
+exp2,pl135,Perlite,Always,Yes,0.0267,2
+exp2,pl136,Sand,Never,Yes,0.059,4
+exp2,pl137,Gravel ,Always,No,0.0584,4
+exp2,pl138,Vermiculite ,Never,Yes,0.1033,3
+exp2,pl139,Perlite,Never,Yes,,1
+exp2,pl140,Compost,Always,No,0.4116,3
+exp2,pl141,Perlite,Always,No,0.0078,3
+exp2,pl142,Gravel ,Never,Yes,0.3595,3
+exp2,pl143,Vermiculite ,Limited,No,0.0513,4
+exp2,pl144,Sand,Limited,Yes,0.0936,2
+exp2,pl145,Compost,Limited,No,0.4045,4
+exp2,pl146,Vermiculite ,Never,No,0.0365,3
+exp2,pl147,Gravel ,Always,Yes,0.3557,2
+exp2,pl148,Compost,Never,No,0.3757,4
+exp2,pl149,Sand,Always,No,0.0373,4
+exp2,pl150,Perlite,Limited,Yes,0.0225,2
+exp2,pl151,Perlite,Never,No,0.0076,2
+exp2,pl152,Sand,Never,No,0.0262,4
+exp2,pl153,Compost,Never,Yes,0.2265,4
+exp2,pl154,Gravel ,Limited,No,0.0404,3
+exp2,pl155,Vermiculite ,Never,Yes,0.0862,4
+exp2,pl156,Sand,Limited,Yes,0.0578,3
+exp2,pl157,Vermiculite ,Limited,Yes,0.1342,3
+exp2,pl158,Gravel ,Never,No,0.038,3
+exp2,pl159,Perlite,Limited,No,0.0117,2
+exp2,pl160,Compost,Limited,No,0.3733,4
+exp2,pl161,Gravel ,Always,Yes,0.3649,3
+exp2,pl162,Sand,Limited,No,0.0306,2
+exp2,pl163,Compost,Always,Yes,0.2068,3
+exp2,pl164,Vermiculite ,Limited,No,0.0204,4
+exp2,pl165,Perlite,Always,No, ,0
+exp2,pl166,Sand,Never,Yes,0.064,4
+exp2,pl167,Compost,Limited,Yes,0.2414,4
+exp2,pl168,Vermiculite ,Always,No,0.0268,4
+exp2,pl169,Gravel ,Always,No,0.049,3
+exp2,pl170,Perlite,Never,Yes,0.0227,3
+exp2,pl171,Perlite,Limited,Yes,0.0353,3
+exp2,pl172,Vermiculite ,Never,No,0.0244,4
+exp2,pl173,Gravel ,Never,Yes,0.2767,3
+exp2,pl174,Compost,Never,No,0.4244,4
+exp2,pl175,Sand,Always,Yes,0.0494,3
+exp2,pl176,Gravel ,Limited,Yes,0.3526,2
+exp2,pl177,Compost,Always,No,0.4117,4
+exp2,pl178,Sand,Always,No,0.034,3
+exp2,pl179,Perlite,Always,Yes,,0
+exp2,pl180,Vermiculite ,Always,Yes,0.0668,3
+exp2,pl181,Perlite,Limited,Yes,0.0291,2
+exp2,pl182,Vermiculite ,Never,No,0.0219,2
+exp2,pl183,Gravel ,Always,Yes,0.2536,3
+exp2,pl184,Compost,Never,No,0.2602,4
+exp2,pl185,Sand,Always,No,0.0571,2
+exp2,pl186,Compost,Limited,Yes,0.1849,3
+exp2,pl187,Sand,Always,Yes,0.0663,4
+exp2,pl188,Perlite,Limited,No,0.013,1
+exp2,pl189,Vermiculite ,Limited,Yes,0.0872,4
+exp2,pl190,Gravel ,Limited,No,0.0403,4
+exp2,pl191,Gravel ,Never,No,0.0479,2
+exp2,pl192,Perlite,Never,No,0.0144,3
+exp2,pl193,Vermiculite ,Always,Yes,0.0538,4
+exp2,pl194,Compost,Always,Yes,0.1769,4
+exp2,pl195,Sand,Limited,No,0.0217,4
+exp2,pl196,Compost,Always,No,0.4561,2
+exp2,pl197,Sand,Never,Yes,0.083,3
+exp2,pl198,Gravel ,Always,No,0.0292,1
+exp2,pl199,Vermiculite ,Never,Yes,0.1018,3
+exp2,pl200,Perlite,Never,Yes,0.0245,1
+exp2,pl201,Compost,Limited,No,0.344,3
+exp2,pl202,Perlite,Always,No,,3
+exp2,pl203,Gravel ,Never,Yes,0.2895,4
+exp2,pl204,Vermiculite ,Limited,No,0.0236,2
+exp2,pl205,Sand,Limited,Yes,0.115,3
+exp2,pl206,Perlite,Always,Yes,,0
+exp2,pl207,Gravel ,Limited,Yes,0.2389,2
+exp2,pl208,Sand,Never,No,0.0215,4
+exp2,pl209,Compost,Never,Yes,0.2368,4
+exp2,pl210,Vermiculite ,Always,No,0.0273,3
+exp2,pl211,Gravel ,Limited,Yes,,0
+exp2,pl212,Vermiculite ,Always,Yes,0.0478,2
+exp2,pl213,Sand,Always,No,0.033,4
+exp2,pl214,Perlite,Always,Yes,,0
+exp2,pl215,Compost,Always,No,0.4496,3
+exp2,pl216,Sand,Limited,Yes,0.0727,2
+exp2,pl217,Compost,Limited,No,0.4177,3
+exp2,pl218,Gravel ,Never,No,0.0472,3
+exp2,pl219,Perlite,Limited,No,,1
+exp2,pl220,Vermiculite ,Limited,Yes,0.0805,4
+exp2,pl221,Sand,Never,Yes,0.0522,4
+exp2,pl222,Perlite,Never,Yes,0.014,1
+exp2,pl223,Vermiculite ,Always,No,0.0471,3
+exp2,pl224,Gravel ,Always,No,0.0318,2
+exp2,pl225,Compost,Limited,Yes,0.306,4
+exp2,pl226,Perlite,Limited,Yes,0.0196,1
+exp2,pl227,Sand,Always,Yes,0.0302,4
+exp2,pl228,Gravel ,Never,Yes,0.3997,2
+exp2,pl229,Compost,Never,No,0.2627,3
+exp2,pl230,Vermiculite ,Never,No,0.0203,3
+exp2,pl231,Gravel ,Always,Yes,0.3854,3
+exp2,pl232,Perlite,Always,No,0.0075,2
+exp2,pl233,Compost,Always,Yes,0.1754,4
+exp2,pl234,Vermiculite ,Limited,No,0.0315,2
+exp2,pl235,Sand,Limited,No,0.0322,3
+exp2,pl236,Perlite,Never,No,0.0068,1
+exp2,pl237,Vermiculite ,Never,Yes,0.1184,4
+exp2,pl238,Compost,Never,Yes,0.1926,4
+exp2,pl239,Gravel ,Limited,No,0.0254,4
+exp2,pl240,Sand,Never,No,0.0264,3
