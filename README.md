@@ -87,7 +87,7 @@ Additionally, there should be an embedded URL to the sample protocol used to cre
 | a        | 1        | a1       |
 
 #### Metadata Table
-| Columns  | Column Description                                                            | Data Description                                                                                                                                   | 
+| Columns  | Description                                                            | Data                                                                                                                                   | 
 |----------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Column_1 | Column containing alphabetic data                                             | Data contains any of the 26 Latin letters in lower case, between A-Z                                                                               |
 | Column_2 | Column containing numeric data                                                | Data contains integers                                                                                                                             |
