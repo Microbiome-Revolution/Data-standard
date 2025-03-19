@@ -15,11 +15,13 @@
 
 ---
 
+### Briefing
+
+Please follow this decision tree to determine whether the data you are trying to include in this repository is appropriate.
+
+ <img src="graphics/decision_tree.svg" width="800" alt="">
+
 ### Data Principles
-
-A mind map of the data flow between work packages can be seen below. It is imperative to maintain well documented and easily accessible data and metadata that can flow between the work packages. This can be achieved using version controlled documentation that is updated regularly.
-
- <img src="graphics/project_mind_map.svg" width="800" alt="">
 
 **The person responsible for formatting the data and metadata in an appropriately reproducible manner is the one collecting it.** Fundamentally, they are the best to explain the biological meaningfulness of their data and methods, and produce understandable documentation. 
 
