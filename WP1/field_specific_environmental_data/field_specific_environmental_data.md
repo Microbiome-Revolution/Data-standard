@@ -1,4 +1,4 @@
-#### *field_specific_environmental_data*
+#### *field_specific_environmental_data.csv*
 
 - This file contains the desrciptors for the columns (questions) in the field history survey received from Farmers.
 
