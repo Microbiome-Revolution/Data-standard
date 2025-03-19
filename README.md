@@ -109,8 +109,6 @@ WP1
 |-- dna_quantification/
 |-- |-- dna_quantification_results.csv
 |-- |-- dna_quantification_results.md
-|-- |-- dna_quantification_parameters.csv
-|-- |-- dna_quantification_parameters.md
 ```
 
 ---
