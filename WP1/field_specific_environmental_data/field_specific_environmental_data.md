@@ -48,6 +48,20 @@
 | herbicides_use | The brand name of Herbicides used. | No; Yes, Free text of brand name provided by farmers |
 | tillage | Response for tillage method used on field | Yes, No |
 | tillage_method | The method used to till the field | Reduced tillage, Direct drilling, Ploughed, Strip till drill, Primary Tilling |
+| soil_texture | Description of the pysical texture of the soil | Sand, Loamy Sand, Sandy Loam, Loam, Silt Loam, Silt, Sandy Clay Loam, Clay Loam, Silty Clay Loam, Sandy Clay, Silty Clay, Clay |
+| soil_ph	| Alkalinity or acidity of soil	| 1, 2, 3… 14 |
+| available_p	| Concentration of  Phosphorus	| TBD |
+| available_k	| Concentration of Potassium |	TBD |
+| available_mg	| Concentration of Magnesium |	TBD |
+| available_ca	| Concentration of Calcium |	TBD |
+| available_na	| Concentration of Sodium |	TBD |
+| extractable_cu	| Concentration of Copper	| TBD |
+| extractable_zn	| Concentration of Zinc |	TBD |
+| extractable_fe |	Concentration of Iron |	TBD |
+| extractable_so4 |	Concentration of Sulphates |	TBD |
+| extractable_mo	| Concentration of Molybdium	| TBD |
+| extractable_mn	| Concentration of Manganese |	TBD |
+| extractable_co | Concentration of Cobalt | TBD |
 | Any other relevant info you'd like to tell us? | Response for additional information | Yes, No |
 | Please add any relevant information | Free text of additional information provided by farmers | Free text of additional information provided by farmers |
 | Is there any other information about your field that you would like to tell us? | Response for additional information | Yes, No |
