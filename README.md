@@ -113,52 +113,155 @@ WP1
 
 ---
 
-### Git for collaboration
-There are 3 methods to interact with this repository using Git. Firstly, you can directly upload files and edit readme documents using the GitHub website. Second, you can download the GitHub Desktop application on Windows and Mac. Third, using Git on your local machine in terminal by cloning the repository. The process for achieving this can be seen below:
+# GitHub Collaborative Workflow
 
+This section covers all the key steps for working together on a GitHub repository, plus how to handle common issues like merge conflicts and pull errors. Whether you are working on a repository for the first time or contributing for the tenth, this guide is intended as a resource you can revisit whenever needed.
 
-#### First, clone the repository to your local system:
-This will create a local copy of the most up-to-date GitHub directory in your system, and will establish a connection between you and the remote repository.
-```
-cd <desired-directory> # Switch to an appropriate directory
+#### Setup and Installation
 
-git clone git@github.com:Microbiome-Revolution/Data-standard.git
-cd Data-standard # Change to the repo directory
-```
+Before contributing, make sure your tools are ready. Every user needs Git installed, and Sublime Merge provides a visual interface that makes collaboration easier. Even if you have used Git before, checking your setup ensures you avoid small problems later.
 
-#### Before making changes:
-Before starting new work or resolving conflicts, pull the latest changes. This will make your local version the same as the remote repository on GitHub. You should do this every time before you make changes to the directory on your local system, as in a large collaborative project your local copy will be behind the main branch frequently.
-```
-git fetch origin
-git merge origin/main
-```
+To install Git: 
 
-#### Create a new branch:
-This switches to a unique branch of the main repository that ensures changes are tracked and isolated to your unique stream. The changes will be merged into the main branch (```main```) at a later point when you are sure the changes should be made to the main repository. **Make sure that the most up-to-date remote repository is the one you actually want to be working on, though, as this is what you will be updating your local copy to.**
-```
-# Create and switch to a new branch
-git checkout -b <branch-name>
+  - **Linux:** `sudo apt install git`
+  - **Mac:** `brew install git`
+
+Download and install Sublime Merge from <https://www.sublimemerge.com/>.
+
+Configure your Git identity to link your commits properly:
+
+``` bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
 ```
 
-#### Check the repository status:
-This will tell you which files you have modified, added or deleted since retrieving the latest version of the repository. 
-```
-git status
+This configuration only needs to be done once on each machine.
+
+------------------------------------------------------------------------
+
+#### Basic Git Concepts
+
+Git tracks changes in a project. A repository (repo) contains your project files. Cloning makes a local copy of a remote repo, allowing you to work on it. Branches let you work safely on features without disturbing the main code. Commits save snapshots of your work, pushing sends them to GitHub, and pull requests propose merging your work back into the main project. Merge conflicts happen when two changes overlap, requiring manual intervention.
+
+------------------------------------------------------------------------
+
+#### Typical Git Workflow
+
+The basic cycle remains the same: clone (or pull updates), create a branch, make changes, commit them, push the branch, and create a pull request.
+
+``` mermaid
+graph TD;
+    A[Clone or Pull Repo] --> B[Create New Branch];
+    B --> C[Make Changes];
+    C --> D[Commit Changes];
+    D --> E[Push Branch];
+    E --> F[Create Pull Request];
+    F --> G[Review & Merge];
 ```
 
-#### Modify your data files and commit changes: 
-You can now update the ```README.md``` files and include any graphics or metadata files that you want to include on the remote repository. Make sure that these files adhere to the principles above, and fully work as intended with no errors. You can then add the files, and commit them with an informative message of the change: 
-```
-# Stage your changes
-git add <file-paths>
+------------------------------------------------------------------------
 
-# Commit with a meaningful message
-git commit -m "Added metadata for WP<X>: <description>"
+#### Step-by-Step Workflow Guide
+
+#### 1. Clone the repository
+
+When first joining the project, you will need to clone the repository to get all project files locally. Later on, you will typically just pull new changes instead.
+
+In Sublime Merge: `Repository` \> `Clone Repository` and paste the GitHub URL. This downloads the repo to a local folder.
+
+#### 2. Create a new branch
+
+Before making changes, create a new branch each time. This protects the main code and organizes your work clearly.
+
+In Sublime Merge: `Branch` \> `Create Branch`. Name it meaningfully, e.g., `yourname-update-dictionary`.
+
+#### 3. Make your changes
+
+You can now modify or add files as needed. Git and Sublime Merge will automatically detect and track your changes.
+
+#### 4. Commit your changes
+
+Commits save your work locally. Write small, clear commits to make your history readable and easier to troubleshoot.
+
+In Sublime Merge: stage files, write a short descriptive message, and click `Commit`.
+
+#### 5. Push your branch
+
+After committing, push your branch to GitHub so others can see it.
+
+Click `Push` in Sublime Merge. The first push for a branch may ask you to confirm the branch destination.
+
+#### 6. Create a pull request (PR)
+
+A pull request proposes merging your branch into the main project. Always create a PR after pushing.
+
+Sublime Merge will often suggest this, or you can open GitHub and click "Compare & pull request." Write a clear description of your changes.
+
+#### 7. Review and merge
+
+Other team members will review your PR. You might be asked to revise it, or it may be approved and merged. This process ensures project quality and shared understanding.
+
+------------------------------------------------------------------------
+
+#### Handling Common Problems
+
+#### Problem: Git Pull Error ("Your local changes would be overwritten")
+
+If you have uncommitted changes and attempt to pull updates, Git will block the pull to prevent losing your work.
+
+We want to avoid unintentional overwriting. Resolving this ensures you either safely save or temporarily shelve your local changes.
+
+#### Solution 1: Commit your changes
+
+``` bash
+git add README.md
+git commit -m "Save local changes before pulling"
+git pull
 ```
 
-#### Push and Pull Request
-You can then push these changes to the branch of the remote repository. This then requires merging in the remote repository that is enabled through a "pull request". After pushing to your branch, submit a pull request and tag specific individuals in the MGR team that can review your request and merge the changes. This adds a layer of redundancy and checks that prevent conflicts and accidental information loss.
+This saves your changes first (`add` and `commit`), then integrates remote updates with `pull`.
+
+#### Solution 2: Stash your changes
+
+``` bash
+git stash
+git pull
+git stash pop
 ```
-git push origin <branch-name>
-```
+
+This temporarily hides your changes with `stash`, pulls the latest remote updates, then reapplies your changes with `stash pop`.
+
+#### Problem: Merge Conflicts
+
+Merge conflicts arise when two sets of changes overlap. Git cannot automatically merge them and asks for your help.
+
+We want to resolve conflicts carefully to preserve all important edits and maintain project integrity.
+
+In Sublime Merge, conflicted files are highlighted. Open them to choose whether to: - Accept "ours" (your version) - Accept "theirs" (incoming version) - Manually edit to merge both versions
+
+After resolving, stage the files and commit to finalize the merge.
+
+------------------------------------------------------------------------
+
+#### Best Practices
+
+Whether it's your first contribution or a routine update, following best practices ensures smooth collaboration: - Always pull the latest main branch before creating a new branch or working. - Create a new branch for each separate task. - Write clear, descriptive commit messages. - Handle conflicts carefully and communicate with teammates if needed. - Delete local and remote branches after merging to keep the project clean.
+
+------------------------------------------------------------------------
+
+#### Quick Reference Cheat Sheet
+
+| Action         | Command                          |
+|----------------|----------------------------------|
+| Clone repo     | `git clone <repo-url>`           |
+| Create branch  | `git checkout -b branch-name`    |
+| Stage changes  | `git add .`                      |
+| Commit changes | `git commit -m "message"`        |
+| Push branch    | `git push -u origin branch-name` |
+| Pull latest    | `git pull`                       |
+| Stash changes  | `git stash` and `git stash pop`  |
+| See branches   | `git branch`                     |
+| Delete branch  | `git branch -d branch-name`      |
+
+------------------------------------------------------------------------
 
