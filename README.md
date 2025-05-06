@@ -229,11 +229,29 @@ In Sublime Merge, conflicted files are highlighted. Open them to choose whether 
 
 After resolving, stage the files and commit to finalize the merge.
 
+#### Problem: Renaming Files
+
+When a file is renamed, Git does not inherently track it as a rename. Instead, it sees the change as a deletion of the original file and the addition of a new file with the new name. This breaks the file’s version history, making it appear as though the old file was deleted and the new one was created from scratch. As a result, the continuity of changes, authorship, and commit history is lost.
+
+We can avoid this by using the `git mv` function, that renames a file and keeps the git history:
+
+``` bash
+git mv <old file name> <new file name>
+
+e.g.
+git mv field_data2.csv field_environmental_data.csv
+```
+
 ------------------------------------------------------------------------
 
 #### Best Practices
 
-Whether it's your first contribution or a routine update, following best practices ensures smooth collaboration: - Always pull the latest main branch before creating a new branch or working. - Create a new branch for each separate task. - Write clear, descriptive commit messages. - Handle conflicts carefully and communicate with teammates if needed. - Delete local and remote branches after merging to keep the project clean.
+Whether it's your first contribution or a routine update, following best practices ensures smooth collaboration: 
+- Always pull the latest main branch before creating a new branch or working. 
+- Create a new branch for each separate task. 
+- Write clear, descriptive commit messages. 
+- Handle conflicts carefully and communicate with teammates if needed. 
+- Delete local and remote branches after merging to keep the project clean.
 
 ------------------------------------------------------------------------
 
