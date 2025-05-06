@@ -143,7 +143,7 @@ This configuration only needs to be done once on each machine.
 
 Git tracks changes in a project. A repository (repo) contains your project files. Cloning makes a local copy of a remote repo, allowing you to work on it. Branches let you work safely on features without disturbing the main code. Commits save snapshots of your work, pushing sends them to GitHub, and pull requests propose merging your work back into the main project. Merge conflicts happen when two changes overlap, requiring manual intervention.
 
- <img src="graphics/git_commands.png" width="400" alt="">
+ <img src="graphics/git_commands.svg" width="400" alt="">
 
 ------------------------------------------------------------------------
 
