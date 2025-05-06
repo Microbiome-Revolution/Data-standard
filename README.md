@@ -151,6 +151,8 @@ Git tracks changes in a project. A repository (repo) contains your project files
 
 The basic cycle remains the same: clone (or pull updates), create a branch, make changes, commit them, push the branch, and create a pull request.
 
+ <img src="graphics/simplified_git_flow.png" width="500" alt="">
+
 #### 1. Clone the repository
 
 When first joining the project, you will need to clone the repository to get all project files locally. Later on, you will typically just pull new changes instead.
