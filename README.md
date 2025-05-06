@@ -11,7 +11,7 @@
 * [Data Principles](#data-principles)
 * [Metadata Principles](#metadata-principles)
 * [Directory Structure](#directory-structure)
-* [Git for Collaboration](#git-for-collaboration)
+* [Git Workflow](#git-workflow)
 
 ---
 
@@ -113,7 +113,7 @@ WP1
 
 ---
 
-# GitHub Collaborative Workflow
+# Git Workflow
 
 This section covers all the key steps for working together on a GitHub repository, plus how to handle common issues like merge conflicts and pull errors. Whether you are working on a repository for the first time or contributing for the tenth, this guide is intended as a resource you can revisit whenever needed.
 
@@ -143,25 +143,13 @@ This configuration only needs to be done once on each machine.
 
 Git tracks changes in a project. A repository (repo) contains your project files. Cloning makes a local copy of a remote repo, allowing you to work on it. Branches let you work safely on features without disturbing the main code. Commits save snapshots of your work, pushing sends them to GitHub, and pull requests propose merging your work back into the main project. Merge conflicts happen when two changes overlap, requiring manual intervention.
 
+ <img src="graphics/git_commands.png" width="400" alt="">
+
 ------------------------------------------------------------------------
 
 #### Typical Git Workflow
 
 The basic cycle remains the same: clone (or pull updates), create a branch, make changes, commit them, push the branch, and create a pull request.
-
-``` mermaid
-graph TD;
-    A[Clone or Pull Repo] --> B[Create New Branch];
-    B --> C[Make Changes];
-    C --> D[Commit Changes];
-    D --> E[Push Branch];
-    E --> F[Create Pull Request];
-    F --> G[Review & Merge];
-```
-
-------------------------------------------------------------------------
-
-#### Step-by-Step Workflow Guide
 
 #### 1. Clone the repository
 
