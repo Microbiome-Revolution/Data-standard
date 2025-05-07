@@ -1,6 +1,6 @@
 #### *field_specific_environmental_data.csv*
 
-- This file contains the desrciptors for the columns (questions) in the field history survey received from Farmers.
+- This file contains the descriptors for the columns (questions) in the field history survey received from Farmers.
 
 - Data is formatted based on the following metadata:
 
