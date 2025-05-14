@@ -118,13 +118,13 @@ Guidance for Student Contributors and Their Supervisors
 Students contributing data to the Microbiome Green Revolution project, such as those completing MSc, MRes, or undergraduate research projects, are expected to follow the procedures above regarding data collection and procedures below regarding their data handling. Supervisors should ensure these steps are understood and followed as part of the project’s data management process.
 
 #### 1 · Project GitHub Access
-Students should be added to the Microbiome Green Revolution GitHub organisation for the duration of their project to allow proper access and participation. This is typically arranged by the academic supervisor or relevant project lead.
+Students should be added to the Microbiome Green Revolution GitHub organisation for the duration of their project to allow proper access and participation. This is typically arranged by the academic supervisor or relevant work package postdoc. Students should be given **"Member"** access at the organisation level. 
 
 #### 2 · Removal at Project Completion
-Students should be removed from the organisation once their research contribution ends (e.g. after graduation or formal project conclusion) to ensure continued data security and appropriate repository access.
+Students should be removed from the organisation once their research contribution ends (e.g. after completion of studies or project conclusion) to ensure continued data security and appropriate repository access.
 
 #### 3 · Supervisor Oversight and Clarity on Data Standards
-Supervisors should ensure that students understand what is required before contributing data to the repository. This includes reviewing whether the student has sufficient information and context to meet repository standards. Refer to the decision tree at the top of this document to assess whether the data should be included.
+Supervisors & PostDocs should ensure that students understand what is required before contributing data to the repository. This includes reviewing whether the student has sufficient information and context to meet repository standards. Refer to the decision tree at the top of this document to assess whether the data should be included.
 
 #### 4 · Data Submission and Final Handover
 All data that meets the criteria outlined in the decision tree should be submitted to the relevant Work Package Postdoc. This ensures data is reviewed, stored, and integrated appropriately.
